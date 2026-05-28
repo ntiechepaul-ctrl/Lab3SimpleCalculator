@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/resultEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="0" />
+
+    <LinearLayout android:id="@+id/buttonRow01" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+        <Button android:id="@+id/button07" android:text="7" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickNumericalButton"/>
+        <Button android:id="@+id/button08" android:text="8" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickNumericalButton"/>
+        <Button android:id="@+id/button09" android:text="9" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickNumericalButton"/>
+        <Button android:id="@+id/buttonDiv" android:text="/" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickFunctionButton"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/buttonRow02" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+        <Button android:id="@+id/button04" android:text="4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickNumericalButton"/>
+        <Button android:id="@+id/button05" android:text="5" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickNumericalButton"/>
+        <Button android:id="@+id/button06" android:text="6" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickNumericalButton"/>
+        <Button android:id="@+id/buttonMult" android:text="*" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickFunctionButton"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/buttonRow03" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+        <Button android:id="@+id/button01" android:text="1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickNumericalButton"/>
+        <Button android:id="@+id/button02" android:text="2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickNumericalButton"/>
+        <Button android:id="@+id/button03" android:text="3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickNumericalButton"/>
+        <Button android:id="@+id/buttonSub" android:text="-" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickFunctionButton"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/buttonRow04" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+        <Button android:id="@+id/buttonCE" android:text="C" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickFunctionButton"/>
+        <Button android:id="@+id/button00" android:text="0" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickNumericalButton"/>
+        <Button android:id="@+id/buttonDot" android:text="." android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickNumericalButton"/>
+        <Button android:id="@+id/buttonAdd" android:text="+" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:onClick="onClickFunctionButton"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonEq"
+        android:text="="
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="onClickFunctionButton"/>
+
+</LinearLayout>
